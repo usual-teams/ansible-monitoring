@@ -1,0 +1,10 @@
+---
+- import_playbook: prometheus.yml
+  tags:
+  - monitoring
+- import_playbook: grafana.yml
+  tags:
+  - monitoring
+- import_playbook: node-exporter.yml
+  tags:
+  - monitoring
